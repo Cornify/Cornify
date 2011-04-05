@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, a, a:link {
+	color: #FF00FF;
+	font-family: "Comic Sans MS", "Marker Felt";
+}
+
+.cornify_pic {
+	-webkit-transform: rotate(5deg) scale(1,1); 
+	-moz-transform: rotate(5deg) scale(1,1); 
+	transform: rotate(5deg) scale(1,1); 
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	transition: all .1s linear;	
+}
+
+.cornify_pic:hover {
+	-webkit-transform: rotate(-10deg) scale(1.2,1.2); 
+	-moz-transform: rotate(-10deg) scale(1.2,1.2); 
+	transform: rotate(-10deg) scale(1.2,1.2); 
+}
