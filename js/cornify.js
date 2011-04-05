@@ -93,10 +93,7 @@ cornify_add = function() {
 
 cornify_replace = function() {
 	// Replace text.
-	var hc = 6;
-	var hs;
-	var h;
-	var k;
+	var hc = 6, hs, h, k;
 	var words = ['Happy','Sparkly','Glittery','Fun','Magical','Lovely','Cute','Charming','Amazing','Wonderful'];
 	while(hc >= 1) {
 		hs = document.getElementsByTagName('h' + hc);
