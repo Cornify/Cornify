@@ -30,7 +30,7 @@ var cornify_add = function(options) {
     var de = document.documentElement;
     var transform = 'translate(-50%, -50%)';
     var showGrandUnicorn = cornify_count == 15;
-    
+
     // Create a container for our 'corn or 'bow.
     var div = document.createElement('div');
     div.style.position = 'fixed';
@@ -50,7 +50,7 @@ var cornify_add = function(options) {
         numType = '%';
         height = Math.round(height*100) + '%';
     }
-    
+
     if(showGrandUnicorn) {
         // Clicking 15 times summons the grand unicorn - which is centered on the screen.
         div.style.top = '50%'
@@ -63,7 +63,7 @@ var cornify_add = function(options) {
 
         transform += ' rotate('+Math.round(Math.random()*10-5)+'deg)';
     }
-    
+
     // Create the image element.
     var img = document.createElement('img');
     img.style.opacity = 0;
@@ -96,13 +96,13 @@ var cornify_add = function(options) {
             }
         };
     }
-    
+
     div.style.transform = transform;
     div.style.MozTransform = transform;
     div.style.webkitTransform = transform;
 
     img.setAttribute('src', url);
-    
+
     // Add a nice hover wigggle.
     img.style.transition = "all .1s linear";
 
@@ -119,7 +119,7 @@ var cornify_add = function(options) {
         var size = .9+Math.round(Math.random()*10)/100;
         var angle = Math.round(Math.random()*6-3);
         var result = "rotate("+angle+"deg) scale("+size+","+size+")";
-        img.style.transform = result;  
+        img.style.transform = result;
         img.style.MozTransform = result;
         img.style.webkitTransform = result;
     };
@@ -127,10 +127,10 @@ var cornify_add = function(options) {
     // Append our container DIV to the page.
     var body = document.getElementsByTagName('body')[0];
     body.appendChild(div);
-    div.appendChild(img);   
+    div.appendChild(img);
 
     // Hooray - now we have a sparkly unicorn (or rainbow) on the page. Another cornification well done. Congrats!
-    
+
     // When clicking 5 times, add a custom stylesheet to make the page look awesome.
     if(cornify_count == 5) {
         var cssExisting = document.getElementById('__cornify_css');
@@ -146,8 +146,8 @@ var cornify_add = function(options) {
             head.appendChild(css);
         }
         cornify_replace();
-    }   
-    
+    }
+
     cornify_updatecount();
 
     // Trigger an event on the document.
@@ -237,7 +237,7 @@ var cornify_replace = function() {
     var headerElement;
     var i;
     var magicalWords = ['Happy', 'Sparkly', 'Glittery', 'Fun', 'Magical', 'Lovely', 'Cute', 'Charming', 'Amazing', 'Wonderful'];
-    
+
     while(headerTypeIndex >= 1) {
         headerElements = document.getElementsByTagName('h' + headerTypeIndex);
 
@@ -283,7 +283,7 @@ var cornify_add_cupcake_button = function() {
     var id = '__cornify_cupcake_button';
     var doc = document;
     var button = doc.getElementById(id);
-        
+
     if(!button) {
         button = doc.createElement('div');
         button.id = id;
