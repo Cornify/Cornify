@@ -255,7 +255,7 @@ var cornify_replace = function() {
 var cornify_click_cupcake_button = function() {
     var doc = document;
 
-    var corns = doc.getElementsByClassName('__cornify_unicorn');
+    var corns = doc.querySelectorAll('.__cornify_unicorn');
     if(corns) {
         for(var i=0; i<corns.length; i++) {
             corns[i].parentNode.removeChild(corns[i]);
